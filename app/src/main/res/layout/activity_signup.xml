@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:src="@drawable/pattern_onbroading_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="500dp"
+            android:layout_height="434dp"
+            android:src="@drawable/background_image2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_login"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="16dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:text="Create Account"
+                        android:textColor="#D61355" />
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textSize="16dp"
+                        android:textColor="#3B3B3B" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_width="match_parent"
+                        android:hint="Full name"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_full_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="44dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_width="match_parent"
+                        android:hint="Email Address"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="44dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_width="match_parent"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/black"
+                        app:passwordToggleDrawable="@drawable/baseline_remove_red_eye_24"
+                        android:hint="Password"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:importantForAccessibility="yes"
+                            android:contentDescription="Password input field"
+                            android:maxLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sign up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_button"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="65dp"
+                        android:layout_marginTop="36dp"/>
+
+                    <View
+                        android:layout_width="148dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:background="#D2D4D8"/>
+
+                    <Button
+                        android:layout_marginTop="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="65dp"
+                        android:drawableStart="@drawable/ic_google"
+                        android:padding="15dp"
+                        android:background="@drawable/background_button_2"
+                        android:text="Sign up with Google"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

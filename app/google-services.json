@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080874362046",
+    "project_id": "iapps-2",
+    "storage_bucket": "iapps-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080874362046:android:92727ee3add23470b66aef",
+        "android_client_info": {
+          "package_name": "com.example.iapps_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPYdkKldmDtYJVuRCfyvYi9i7J_Cnk1Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
